@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,32 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-        <!--scripts-->
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-     
+  
         <!--links-->
-        <!-- <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" /> -->
+        <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
         <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet"> 
     
     <!-- Bring in our bootstrap stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <!-- Added link to the jQuery library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
-<body>   
-    <div class> </div>
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">Test</div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">Test</div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">test</div>
-    </div>
-</div>
-</body>
 
-<script src = "nytimes.search.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+          </div>
+        <div class="row">
+            <div class="col-xs-12"></div>
+            
+            <!--search area-->
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Search Term</span>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" id = "search">
+                </div>
+            
+            <!--number of records -->
+                <div class="input-group">
+                  <select class="custom-select" id="inputGroupSelect04">
+                    <option selected>Number of Records</option>
+                    <option class = "numRecords" value="1">1</option>
+                    <option class = "numRecords" value="5">5</option>
+                    <option class = "numRecords" value="10">10</option>
+                  </select>
+                </div>
+    
+                <!--Start Year -->
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Start Year (optional)</span>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" id = "startYear">
+                </div>
+    
+                <!--End Year -->
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">End Year (optional)</span>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" id = "endYear">
+                </div>
+    
+                <!--Button Group-->
+                <button class="btn btn-primary" id =  "searchBtn" type="submit">Search</button>
+    
+                <button class="btn btn-primary" id = "clearBtn" type="submit">Clear All</button>
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 footer"></div>
+        </div>
+    </div>  
+    </body>
+        <!--scripts-->
+        <!-- Added link to the jQuery library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script src="./assets/javascript/js.js"></script>
 </html>
